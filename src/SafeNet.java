@@ -140,6 +140,9 @@ public class SafeNet {
 
 	public void Q() {
 	}
+	public void add1000() {
+		one+=1000;
+	}
 
 }
 
