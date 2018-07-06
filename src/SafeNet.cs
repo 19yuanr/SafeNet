@@ -97,7 +97,7 @@ public class SafeNet {
 
 		}
 		if (amount != 0) {
-			System.out.println("Failure: insufficient funds");
+			Console.WriteLine("Failure: insufficient funds");
 			hundred = xhundred;
 			fifty = xfifty;
 			twenty = xtwenty;
@@ -105,13 +105,13 @@ public class SafeNet {
 			five = xfive;
 			one = xone;
 		} else {
-			System.out.println("Success");
-			System.out.println("$100: " + hundred);
-			System.out.println("$50: " + fifty);
-			System.out.println("$20: " + twenty);
-			System.out.println("$10: " + ten);
-			System.out.println("$5: " + five);
-			System.out.println("$1: " + one);
+			Console.WriteLine("Success");
+			Console.WriteLine("$100: " + hundred);
+			Console.WriteLine("$50: " + fifty);
+			Console.WriteLine("$20: " + twenty);
+			Console.WriteLine("$10: " + ten);
+			Console.WriteLine("$5: " + five);
+			Console.WriteLine("$1: " + one);
 		}
 	}
 
@@ -119,22 +119,22 @@ public class SafeNet {
 		String[] lineData = line.substring(2).split("\\$");
 		for (String each : lineData) {
 			if (Integer.parseInt(each) == 100) {
-				System.out.println("$100: " + hundred);
+				Console.WriteLine("$100: " + hundred);
 			}
 			if (Integer.parseInt(each) == 50) {
-				System.out.println("$50: " + fifty);
+				Console.WriteLine("$50: " + fifty);
 			}
 			if (Integer.parseInt(each) == 20) {
-				System.out.println("$20: " + twenty);
+				Console.WriteLine("$20: " + twenty);
 			}
 			if (Integer.parseInt(each) == 10) {
-				System.out.println("$10: " + ten);
+				Console.WriteLine("$10: " + ten);
 			}
 			if (Integer.parseInt(each) == 5) {
-				System.out.println("$5: " + five);
+				Console.WriteLine("$5: " + five);
 			}
 			if (Integer.parseInt(each) == 1) {
-				System.out.println("$1: " + one);
+				Console.WriteLine("$1: " + one);
 			}
 
 		}
